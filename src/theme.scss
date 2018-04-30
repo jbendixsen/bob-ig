@@ -1,0 +1,12 @@
+@import '~@angular/material/theming';
+@include mat-core();
+
+// TODO: color theme
+$brink-of-beyond-primary: mat-palette($mat-blue-grey);
+$brink-of-beyond-accent:  mat-palette($mat-pink, A200, A100, A400);
+
+$brink-of-beyond-warn:    mat-palette($mat-red);
+
+$brink-of-beyond-theme: mat-dark-theme($brink-of-beyond-primary, $brink-of-beyond-accent, $brink-of-beyond-warn);
+
+@include angular-material-theme($brink-of-beyond-theme);
