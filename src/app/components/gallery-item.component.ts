@@ -7,16 +7,17 @@ import { IInstagram } from '../../models';
   selector: 'app-gallery-item',
   template: `
     <div class="item-container">
-    <img
-      class="gallery-item mat-elevation-6"
-      src="{{instagram.thumbnail_url}}"
-      alt="{{instagram.title}}">
+      <img
+        class="gallery-item"
+        src="{{instagram.thumbnail_url}}"
+        alt="{{instagram.title}}"
+        width="320px">
     </div>
   `,
-  styles: [`
+  styles: [
+    `
     .item-container {
       min-width: 320px;
-      // min-height: 320px;
       margin: 0;
       padding: 0;
       text-align: center;
@@ -28,12 +29,11 @@ import { IInstagram } from '../../models';
       margin: 0;
       padding: 9px;
     }
-  `]
+  `
+  ]
 })
 export class GalleryItemComponent {
-
   @Input() instagram: IInstagram;
 
-  constructor(private dialog: MatDialog) { }
-
+  constructor(private dialog: MatDialog) {}
 }

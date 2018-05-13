@@ -1,14 +1,14 @@
-import { Component, OnInit, HostListener } from "@angular/core";
-import { Observable } from "rxjs/Observable";
+import { Component, OnInit, HostListener } from '@angular/core';
+import { Observable } from 'rxjs/Observable';
 
-import { IInstagram } from "../../models";
-import { InstagramService } from "../../services";
-import { Lightbox, IAlbum } from "angular2-lightbox";
+import { IInstagram } from '../../models';
+import { InstagramService } from '../../services';
+import { Lightbox, IAlbum } from 'angular2-lightbox';
 
-import { GALLERY_IMAGES } from "../app-data";
+import { GALLERY_IMAGES } from '../app-data';
 
 @Component({
-  selector: "app-gallery",
+  selector: 'app-gallery',
   template: `
     <div class="gallery-container container">
       <div class="gallery-row row">

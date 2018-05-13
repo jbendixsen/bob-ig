@@ -1,9 +1,9 @@
-import { Component, OnInit } from "@angular/core";
-import { MatDialog, MatDialogRef } from "@angular/material";
-import { BiographyComponent } from "./biography.component";
+import { Component, OnInit } from '@angular/core';
+import { MatDialog, MatDialogRef } from '@angular/material';
+import { BiographyComponent } from './biography.component';
 
 @Component({
-  selector: "app-header",
+  selector: 'app-header',
   template: `
     <div class="header">
       <img class="logo-image" src="/assets/m.png" alt="" (click)="showBiography()">
@@ -34,11 +34,11 @@ export class HeaderComponent implements OnInit {
   ngOnInit() {}
 
   showBiography() {
-    console.log("Show biography");
+    console.log('Show biography');
 
     this.biographyDialog = this.dialog.open(BiographyComponent, {
-      height: "480px",
-      width: "500px"
+      height: '480px',
+      width: '500px'
     });
   }
 }
